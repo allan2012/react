@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+}
+
+.login-form {
+  margin-top: 20%;
+}
+
+.logo {
+  height: 90px; width: auto;
+}
+
+.logo-container {
+  padding: 15px;
+  text-align: center;
+}

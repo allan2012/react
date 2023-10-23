@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60091fcd-b280-4224-944f-e37d8be26362" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/css/doc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/layout-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/layout-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/layout-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/layout-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logos/logo9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-bg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-mini9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph-square9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/ph9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/theme-preview-demo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/clipboard.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/glightbox-init-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/prism.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/swiper-init-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/js/vendor/typewriter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Ww5iZDQ4F9iZ0pQiujuxvWXl14" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/allankibet/chamasoft/src/assets/css",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "ts.external.directory.path": "/Users/allankibet/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/css" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/styles" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60091fcd-b280-4224-944f-e37d8be26362" name="Changes" comment="" />
+      <created>1697630930820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697630930820</updated>
+      <workItem from="1697630933470" duration="8504000" />
+      <workItem from="1697649617038" duration="902000" />
+      <workItem from="1697650656079" duration="611000" />
+      <workItem from="1697731816795" duration="10424000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

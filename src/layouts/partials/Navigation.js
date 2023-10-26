@@ -51,7 +51,7 @@ const Navigation = () => {
           <li className="nav-item">
             <a className="nav-link" href='#'>
               <i className="bi-body-text"></i>
-              <span>Content Rendering</span>
+              <span>Content</span>
             </a>
           </li>
 
@@ -69,17 +69,10 @@ const Navigation = () => {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href='#'>
+            <Link to="/search" className="nav-link">
               <i className="bi-filetype-js"></i>
-              <span>Ajax Tricks</span>
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href='#'>
-              <i className="bi-segmented-nav"></i>
-              <span>Tabs</span>
-            </a>
+              <span>Search</span>
+            </Link>
           </li>
         </ul>
       </div>

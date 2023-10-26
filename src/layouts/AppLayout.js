@@ -8,22 +8,24 @@ function AppLayout(props) {
       <Navigation />
       <div className="page-container">
         <nav className="navbar nav-doc navbar-light bg-white">
-          <div className="container-fluid">
-            <button  type="button" className="navbar-toggler mobile-nav-toggler">
-              <span className="nav-link main-nav-link first-link">
-                <i className="bi-list fs-28 va-middle"></i>
-              </span>
-            </button>
+          <div className="container-fluid">      
             <ul className="list-inline navbar-button p-0 m-0 ml-auto">
               <li className="nav-item">
                 <div className="btn-group">
-                  <button type="button" className="btn btn-light btn-round dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button type="button" 
+                    className="btn btn-light btn-round dropdown-toggle" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">
                     Welcome <i className="bi-person"></i>
                   </button>
                   <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="#"><i className="bi-info"></i> About</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><Link to='/' className="dropdown-item" href="#"><i className="bi-door-closed"></i> Logout</Link></li>
+                    <li>
+                      <Link to='/' className="dropdown-item"><i className="bi-door-closed"></i> 
+                        Logout
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>

@@ -13,7 +13,6 @@ const Search = () => {
     page: members.current_page,
   });
 
-  console.log(`http://127.0.0.1:8000/api/members?${params}`)
 
   useEffect(() => {
     client.get(`http://127.0.0.1:8000/api/members?${params}`)
@@ -88,7 +87,7 @@ const Search = () => {
 
       <table className="table table-bordered mt-20">
         <thead>
-          <tr>
+          <tr className="bg-primary-light">
             <th>ID</th>
             <th>FIRST NAME</th>
             <th>SURNAME</th>
@@ -130,8 +129,7 @@ const FirstPage = (props) => {
   return (
     <li className="page-item" onClick={props.navigateFirstPage}>
       <button className="page-link">
-        <i className="bi-chevron-left mb-5"></i>
-        <i className="bi-chevron-left mb-5"></i>
+        <i className="bi bi-chevron-double-left"></i>
       </button>
     </li>
   )
@@ -151,8 +149,7 @@ const LastPage = (props) => {
   return (
     <li className="page-item">
       <button className="page-link" onClick={props.navigateLastPage}>
-        <i className="bi-chevron-right mb-5"></i>
-        <i className="bi-chevron-right mb-5"></i>
+        <i className="bi bi-chevron-double-right"></i>
       </button>
     </li>
   )

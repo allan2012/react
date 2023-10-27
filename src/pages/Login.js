@@ -1,4 +1,4 @@
-import loginLogo from '../assets/images/logos/logo10.png'
+import loginLogo from '../assets/images/logos/logo3.png'
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react';
@@ -14,7 +14,7 @@ export default function Login() {
     event.preventDefault()
 
     if (email === 'allan.koskei@gmail.com' && password === 'vitamins') {
-      navigate('/dashboard')
+      navigate('/home')
     } else {
       alert("Oops! Login failed")
     }
@@ -27,10 +27,12 @@ export default function Login() {
         <form onSubmit={handleFormSubmission}>
           <div className="col-lg-4 offset-lg-4 login-form">
             <div className="logo-container">
-              <img src={loginLogo} className="logo" alt="My app logo" />
+              <img src={loginLogo} className="logo mb-10" style={{height: "100px", width: "auto"}} alt="My app logo" />
             </div>
             <div className="mb-3">
-              <label htmlFor="emailLoginInput" className="form-label">Email address</label>
+              <label
+                htmlFor="emailLoginInput"
+                className="form-label">Email address</label>
               <input type="email"
                     className="form-control"
                     id="emailLoginInput"
@@ -40,7 +42,8 @@ export default function Login() {
                 />
             </div>
             <div className="mb-3">
-              <label htmlFor="passwordLoginInput" className="form-label">Password</label>
+              <label htmlFor="passwordLoginInput"
+                     className="form-label">Password</label>
               <input type="password"
                     className="form-control"
                     id="passwordLoginInput"

@@ -8,7 +8,7 @@ function AppLayout(props) {
       <Navigation />
       <div className="page-container">
         <nav className="navbar nav-doc navbar-light bg-white">
-          <div className="container-fluid">      
+          <div className="container-fluid">
             <ul className="list-inline navbar-button p-0 m-0 ml-auto">
               <li className="nav-item">
                 <div className="btn-group">
@@ -37,7 +37,6 @@ function AppLayout(props) {
             <div className="row">
               <div className="col-xl-12">
                 <h4 className="page-title">{props.title}</h4>
-
                 <div className="row">
                   <div className="col-12">
                     {props.children}

@@ -4,7 +4,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Alerts() {
-  const notify = () => toast.info("Wow so easy!");
+
+  const infoExample = 'There will be app maintenance scheduled for 9:30AM EAT. Please note all our service' +
+    'will be unavailable in until further notice'
+  const notify = () => toast.info(infoExample);
 
   return (
     <AppLayout title="Alerts & Toasts">

@@ -14,9 +14,9 @@ const Navigation = () => {
           </li>
 
           <li className="nav-item">
-            <Link to="/dashboard" className="nav-link">
+            <Link to="/home" className="nav-link">
               <i className="bi-house"></i>
-              <span>Dashboard</span>
+              <span>Home</span>
             </Link>
           </li>
 

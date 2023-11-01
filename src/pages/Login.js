@@ -1,7 +1,9 @@
 import loginLogo from '../assets/images/logos/logo3.png'
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
 import { useState } from 'react';
+import {Button} from "semantic-ui-react";
 
 export default function Login() {
 
@@ -16,13 +18,14 @@ export default function Login() {
     if (email === 'allan.koskei@gmail.com' && password === 'vitamins') {
       navigate('/home')
     } else {
-      alert("Oops! Login failed")
+      toast.error("Error login! Incorrect username or password")
     }
 
   }
 
   return (
     <div className="container" style={{ marginTop: '15%'}}>
+      <ToastContainer />
       <div className="row">
         <form onSubmit={handleFormSubmission}>
           <div className="col-lg-4 offset-lg-4 login-form">
@@ -52,7 +55,7 @@ export default function Login() {
                   />
             </div>
             <div className="d-grid gap-2">
-              <button className="btn btn-primary btn-block" type='submit'>Sign in</button>
+              <Button primary type='submit'>Sign in</Button>
             </div>
         </div>
         </form>

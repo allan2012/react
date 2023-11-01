@@ -9,7 +9,11 @@ function AppLayout(props) {
       <div className="page-container">
         <nav className="navbar nav-doc navbar-light bg-white">
           <div className="container-fluid">
+            <a className="navbar-brand" href="#"></a>
             <ul className="list-inline navbar-button p-0 m-0 ml-auto">
+              <li className="nav-item">
+
+              </li>
               <li className="nav-item">
                 <div className="btn-group">
                   <button type="button" 

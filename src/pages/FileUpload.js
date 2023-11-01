@@ -1,8 +1,10 @@
 import React from "react";
 
-function FileUpload() {
+const FileUpload = () => {
+
+
   return (
-    <p>This is the file uploader...</p>
+    <></>
   )
 }
 

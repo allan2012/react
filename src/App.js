@@ -8,7 +8,9 @@ import Charts from "./pages/Charts";
 import React from 'react';
 import Alerts from "./pages/Alerts";
 import Search from "./pages/Search";
-import {isAuthenticated} from "./api/Auth";
+import {isAuthenticated} from "./api/Auth"
+import PageNotFound from "./pages/PageNotFound";
+import Modals from "./pages/Modals";
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
       <Route path="/file-upload" element={<FileUpload />}  />
       <Route path="/charts" element={<Charts />}  />
       <Route path="/alerts" element={<Alerts />}  />
+      <Route path="/modals" element={<Modals />}  />
       <Route path="/search" element={<Search />}  />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 }

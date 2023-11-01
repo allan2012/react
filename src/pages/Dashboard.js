@@ -1,6 +1,5 @@
 import AppLayout from "../layouts/AppLayout";
 import React from 'react';
-import {Link} from "react-router-dom";
 
 const Dashboard = (props) => {
   return (
@@ -15,9 +14,9 @@ const Dashboard = (props) => {
           <div className="col-4">
             <div className="list-group">
               <ListItemTitle><i className="bi bi-arrow-left-right"></i> Routing</ListItemTitle>
-              <ListItem>Page links & redirecting</ListItem>
-              <ListItem>Using page Layouts</ListItem>
-              <ListItem>Handling 404 errors</ListItem>
+              <ListItem>Page links & redirecting ✅</ListItem>
+              <ListItem>Using page Layouts ✅</ListItem>
+              <ListItem>Handling 404 errors ✅</ListItem>
             </div>
           </div>
           <div className="col-4">
@@ -31,9 +30,9 @@ const Dashboard = (props) => {
           <div className="col-4">
             <div className="list-group">
               <ListItemTitle><i className="bi bi-columns-gap"></i> UI</ListItemTitle>
-              <ListItem>Intergrating with Google charts</ListItem>
-              <ListItem>Alerts</ListItem>
-              <ListItem>Page loaders</ListItem>
+              <ListItem>Intergrating with Google charts ✅</ListItem>
+              <ListItem>Alerts ✅</ListItem>
+              <ListItem>Page loaders ✅</ListItem>
             </div>
           </div>
         </div>

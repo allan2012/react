@@ -41,7 +41,7 @@ export const data2options = {
 export default function Charts() {
 
   return (
-    <AppLayout title="Charts & Graphs">
+    <AppLayout title="💹 Charts & Graphs">
       <div className="row">
         <div className="col-4">
           <Chart

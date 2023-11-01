@@ -2,15 +2,21 @@ import React, {useEffect} from "react"
 import {useState} from "react"
 import AppLayout from "../layouts/AppLayout"
 import {client} from "../lib/axiosInstance";
+import Loader from "../components/Loader";
+import {Button} from "semantic-ui-react";
 
 const Search = () => {
 
-  const [userId, setUserId] = useState("")
+  const [searchText, setSearchText] = useState("")
+  const [searchParam, setSearchParam] = useState("")
   const [members, setMembers] = useState({})
   const [data, setData] = useState([])
+  const [isLoading, setLoader] = useState(true)
+
 
   const params = new URLSearchParams({
     page: members.current_page,
+    search: searchParam
   });
 
 
@@ -18,16 +24,22 @@ const Search = () => {
     client.get(`http://127.0.0.1:8000/api/members?${params}`)
       .then((response) => {
         setMembers(response.data)
+        setLoader(false)
         setData(response.data.data)
       }).then(error => {
-        console.log(error)
+        //console.log(error)
       }).finally(() => {
         // Do something compulsory
       })
-  }, [members.current_page])
+  }, [members.current_page, searchParam])
 
   const handleSearchFormSubmission = (event) => {
     event.preventDefault()
+    setSearchParam(searchText);
+    setMembers(prevState => ({
+      ...prevState,
+      current_page: 1
+    }));
   }
 
   const handleFirstPage = () => {
@@ -66,48 +78,51 @@ const Search = () => {
     }
   }
 
-  return (
-    <AppLayout>
-      <form onSubmit={handleSearchFormSubmission}>
-        <div className="row">
-          <div className="col-3">
-            <input
-              type="text"
-              value={userId}
-              className="form-control"
-              placeholder="Enter user ID..."
-              onChange={(e) => setUserId(e.target.value)}
-            />
-          </div>
-          <div className="col">
-            <button className="btn btn-sm btn-primary" type="submit">Search</button>
-          </div>
+  const content = (isLoading) ? <Loader /> : <div>
+    <form onSubmit={handleSearchFormSubmission}>
+      <div className="row">
+        <div className="col-3">
+          <input
+            type="text"
+            value={searchText}
+            className="form-control"
+            placeholder="search..."
+            onChange={(e) => setSearchText(e.target.value)}
+          />
         </div>
-      </form>
+        <div className="col">
+          <Button primary type="submit"><i className="bi bi-search"></i></Button>
+        </div>
+      </div>
+    </form>
 
-      <table className="table table-bordered mt-20">
-        <thead>
-          <tr className="bg-primary-light">
-            <th>ID</th>
-            <th>FIRST NAME</th>
-            <th>SURNAME</th>
-            <th>EMAIL</th>
-            <th>ADDRESS</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(member => <PostRow key={member.id} member={member} />)}
-        </tbody>
-      </table>
+    <table className="table table-bordered mt-20">
+      <thead>
+        <tr className="bg-info-light">
+          <th>ID</th>
+          <th>FIRST NAME</th>
+          <th>SURNAME</th>
+          <th>EMAIL</th>
+          <th>ADDRESS</th>
+        </tr>
+      </thead>
+      <tbody>
+      {data.map(member => <PostRow key={member.id} member={member} />)}
+      </tbody>
+    </table>
 
-      <Pagination
-        members={members}
-        navigateLastPage={handleLastPage}
-        navigateNextPage = {handleNextPage}
-        navigatePreviousPage = {handlePreviousPage}
-        navigateFirstPage = {handleFirstPage}
-      />
+    <Pagination
+      members={members}
+      navigateLastPage={handleLastPage}
+      navigateNextPage = {handleNextPage}
+      navigatePreviousPage = {handlePreviousPage}
+      navigateFirstPage = {handleFirstPage}
+    />
+  </div>
 
+  return (
+    <AppLayout title="Search & pagination">
+      {content}
     </AppLayout>
   )
 }

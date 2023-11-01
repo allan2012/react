@@ -28,16 +28,16 @@ const Navigation = () => {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link">
+            <Link to="/file-upload" className="nav-link">
               <i className="bi-upload"></i>
               <span>File Uploader</span>
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
             <a className="nav-link">
               <i className="bi-caret-right"></i>
-              <span>Data Pagination</span>
+              <span>Options</span>
             </a>
           </li>
 
@@ -62,16 +62,16 @@ const Navigation = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href='#'>
+            <Link to="/modals" className="nav-link">
               <i className="bi-back"></i>
               <span>Modals</span>
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">
             <Link to="/search" className="nav-link">
               <i className="bi-filetype-js"></i>
-              <span>Search</span>
+              <span>Search & Pagination</span>
             </Link>
           </li>
         </ul>

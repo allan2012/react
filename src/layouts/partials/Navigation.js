@@ -35,10 +35,10 @@ const Navigation = () => {
           </li>
 
           <li className="nav-item">
-            <a className="nav-link">
+            <Link to="/options" className="nav-link">
               <i className="bi-caret-right"></i>
               <span>Options</span>
-            </a>
+            </Link>
           </li>
 
           <li className="nav-item">

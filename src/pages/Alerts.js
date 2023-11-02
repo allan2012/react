@@ -12,9 +12,9 @@ export default function Alerts() {
 
   return (
     <AppLayout title="Alerts & Toasts">
-      <Button primary onClick={notify}>info</Button>
-      <Button positive onClick={() => toast.success("This is an success toast", {icon: "🚀", theme: "light"})}>Success</Button>
-      <Button color='red' onClick={() => toast.error("This is an danger toast")}>Error</Button>
+      <Button basic primary onClick={notify}>Info</Button>
+      <Button basic positive onClick={() => toast.success("This is an success toast", {icon: "🚀", theme: "light"})}>Success</Button>
+      <Button basic color='red' onClick={() => toast.error("This is an danger toast")}>Error</Button>
       <ToastContainer />
     </AppLayout>
   )

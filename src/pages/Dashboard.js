@@ -7,10 +7,10 @@ const Dashboard = (props) => {
       <div className="container">
         <div className="row">
           <div className="alert alert-light mt-20" role="alert">
-            <h5>This codebase demonstrates React implementation and basic examples in the following areas.</h5>
+            <p>This <b>codebase</b> demonstrates React implementation and basic examples in the following areas.</p>
           </div>
         </div>
-        <div className="row mt-40">
+        <div className="row mt-35">
           <div className="col-4">
             <div className="list-group">
               <ListItemTitle><i className="bi bi-arrow-left-right"></i> Routing</ListItemTitle>
@@ -41,9 +41,9 @@ const Dashboard = (props) => {
             <div className="list-group">
               <div className="list-group">
                 <ListItemTitle><i className="bi bi-textarea-resize"></i> Forms</ListItemTitle>
-                <ListItem>Handling different inputs</ListItem>
+                <ListItem>Handling different inputs ✅</ListItem>
                 <ListItem>Form validation</ListItem>
-                <ListItem>File upload</ListItem>
+                <ListItem>File upload ✅</ListItem>
               </div>
             </div>
           </div>

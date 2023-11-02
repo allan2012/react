@@ -11,6 +11,7 @@ import Search from "./pages/Search";
 import {isAuthenticated} from "./api/Auth"
 import PageNotFound from "./pages/PageNotFound";
 import Modals from "./pages/Modals";
+import Options from "./pages/Options";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Route path="/alerts" element={<Alerts />}  />
       <Route path="/modals" element={<Modals />}  />
       <Route path="/search" element={<Search />}  />
+      <Route path="/options" element={<Options />}  />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

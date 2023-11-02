@@ -104,6 +104,7 @@ const Search = () => {
           <th>SURNAME</th>
           <th>EMAIL</th>
           <th>ADDRESS</th>
+          <th>DATE CREATED</th>
         </tr>
       </thead>
       <tbody>
@@ -121,7 +122,7 @@ const Search = () => {
   </div>
 
   return (
-    <AppLayout title="Search & pagination">
+    <AppLayout title="Search & Pagination">
       {content}
     </AppLayout>
   )
@@ -188,6 +189,7 @@ const PostRow = (props) => {
       <td>{props.member.surname}</td>
       <td>{props.member.email}</td>
       <td>{props.member.address}</td>
+      <td>{props.member.created_at}</td>
     </tr>
   )
 }

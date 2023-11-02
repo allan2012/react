@@ -40,7 +40,7 @@ function AppLayout(props) {
           <div className="container-fluid">
             <div className="row">
               <div className="col-xl-12">
-                <h4 className="page-title">{props.title}</h4>
+                <h3 className="page-title">{props.title}</h3>
                 <div className="row">
                   <div className="col-12">
                     {props.children}

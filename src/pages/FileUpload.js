@@ -67,7 +67,11 @@ const FileUpload = () => {
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="formFile" className="form-label">Select a file</label>
-              <input className="form-control" style={fileInput} onChange={handleChange} type="file" id="formFile" />
+              <input className="form-control"
+                     style={fileInput}
+                     onChange={handleChange}
+                     type="file"
+                     id="formFile" />
             </div>
             <div className="mb-3">
               <Button primary>Upload Picture</Button>
@@ -91,7 +95,12 @@ const FileUpload = () => {
 const PictureRow = props => {
   return (
     <tr>
-      <td><img src={props.url} className="rounded float-start" style={{ height: "100px", width: "auto"}} alt="Great pictures" /></td>
+      <td>
+        <img src={props.url}
+             className="rounded float-start"
+             style={{ height: "100px", width: "auto"}}
+             alt="Great pictures" />
+      </td>
       <td>
         <code>
           Date: {props.createdAt}<br />

@@ -129,7 +129,6 @@ const Search = () => {
 }
 
 const Pagination = (props) => {
-
   return (
     <ul className="pagination">
       {props.members.current_page !== 1 ? <FirstPage navigateFirstPage={props.navigateFirstPage} /> : ''}

@@ -36,8 +36,6 @@ export const data2options = {
   is3D: false,
 };
 
-
-
 export default function Charts() {
 
   return (

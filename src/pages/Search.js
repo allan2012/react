@@ -4,6 +4,8 @@ import AppLayout from "../layouts/AppLayout"
 import {client} from "../lib/axiosInstance";
 import Loader from "../components/Loader";
 import {Button} from "semantic-ui-react";
+import {toast, ToastContainer} from "react-toastify";
+import {Link} from "react-router-dom";
 
 const Search = () => {
 
@@ -12,6 +14,7 @@ const Search = () => {
   const [members, setMembers] = useState({})
   const [data, setData] = useState([])
   const [isLoading, setLoader] = useState(true)
+  const [deletedId, setDeletedId] = useState(null)
 
 
   const params = new URLSearchParams({
@@ -19,19 +22,26 @@ const Search = () => {
     search: searchParam
   });
 
-
   useEffect(() => {
-    client.get(`http://127.0.0.1:8000/api/members?${params}`)
+    client.get(`/api/members?${params}`)
       .then((response) => {
         setMembers(response.data)
         setLoader(false)
         setData(response.data.data)
-      }).then(error => {
-        //console.log(error)
-      }).finally(() => {
-        // Do something compulsory
+      }).catch(error => {
+        setLoader(false)
+        toast.error("Error fetching members")
       })
-  }, [members.current_page, searchParam])
+  }, [members.current_page, searchParam, deletedId])
+
+  const handleDelete = id => {
+    setDeletedId(id)
+    client.delete(`/api/members/${id}`).then(response => {
+      toast.success("Member deleted successfully!")
+    }).catch(error => {
+      toast.danger("Error deleting member")
+    })
+  }
 
   const handleSearchFormSubmission = (event) => {
     event.preventDefault()
@@ -81,6 +91,7 @@ const Search = () => {
   const content = (isLoading) ? <Loader /> : <div>
     <form onSubmit={handleSearchFormSubmission}>
       <div className="row">
+        <ToastContainer />
         <div className="col-3">
           <input
             type="text"
@@ -105,10 +116,11 @@ const Search = () => {
           <th>EMAIL</th>
           <th>ADDRESS</th>
           <th>DATE CREATED</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-      {data.map(member => <PostRow key={member.id} member={member} />)}
+      {data.map(member => <PostRow key={member.id} member={member} handleDelete={handleDelete} />)}
       </tbody>
     </table>
 
@@ -180,15 +192,19 @@ const NextPage = (props) => {
   )
 }
 
-const PostRow = (props) => {
+const PostRow = ({member, handleDelete}) => {
   return (
     <tr>
-      <td>{props.member.id}</td>
-      <td>{props.member.first_name}</td>
-      <td>{props.member.surname}</td>
-      <td>{props.member.email}</td>
-      <td>{props.member.address}</td>
-      <td>{props.member.created_at}</td>
+      <td>{member.id}</td>
+      <td>{member.first_name}</td>
+      <td>{member.surname}</td>
+      <td>{member.email}</td>
+      <td>{member.address}</td>
+      <td>{member.created_at}</td>
+      <th>
+        <Link to={`/member/${member.id}`}><i className="bi bi-pencil"></i></Link>
+        <Link className="ml-10 text-danger" onClick={() => handleDelete(member.id)}><i className="bi bi-trash"></i></Link>
+      </th>
     </tr>
   )
 }

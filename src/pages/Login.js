@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import { useState } from 'react';
 import {Button} from "semantic-ui-react";
+import {client} from "../lib/axiosInstance";
 
 export default function Login() {
 
@@ -15,12 +16,19 @@ export default function Login() {
   const handleFormSubmission = (event) => {
     event.preventDefault()
 
-    if (email === 'allan.koskei@gmail.com' && password === 'vitamins') {
-      navigate('/home')
-    } else {
-      toast.error("Error login! Incorrect username or password")
-    }
-
+    client.get('/sanctum/csrf-cookie')
+      .then(response => {
+        client.post('/login', {
+          email: email,
+          password: password
+        }).then(response => {
+          console.log(response)
+          navigate('/home')
+        }).catch(error => {
+          console.log(error)
+          toast.error("Error login! Incorrect username or password")
+        })
+      });
   }
 
   return (

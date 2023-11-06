@@ -1,8 +1,26 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import Navigation from "./partials/Navigation";
 import React from 'react';
+import {client} from "../lib/axiosInstance";
+import {toast} from "react-toastify";
 
 function AppLayout(props) {
+
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    client.get('/logout', {
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    }).then(response => {
+      alert("We are here")
+      //navigate('/')
+    }).catch(error => {
+      toast.error("Error signing out")
+    })
+  }
+
   return (
     <div className="main-wrapper doc-wrapper">
       <Navigation />
@@ -12,13 +30,12 @@ function AppLayout(props) {
             <a className="navbar-brand" href="#"></a>
             <ul className="list-inline navbar-button p-0 m-0 ml-auto">
               <li className="nav-item">
-
               </li>
               <li className="nav-item">
                 <div className="btn-group">
-                  <button type="button" 
-                    className="btn btn-light btn-round dropdown-toggle" 
-                    data-bs-toggle="dropdown" 
+                  <button type="button"
+                    className="btn btn-light btn-round dropdown-toggle"
+                    data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Welcome <i className="bi-person"></i>
                   </button>
@@ -26,9 +43,7 @@ function AppLayout(props) {
                     <li><a className="dropdown-item" href="#"><i className="bi-info"></i> About</a></li>
                     <li><hr className="dropdown-divider" /></li>
                     <li>
-                      <Link to='/' className="dropdown-item"><i className="bi-door-closed"></i> 
-                        Logout
-                      </Link>
+                      <button onClick={() => handleLogout() } className="dropdown-item"><i className="bi-door-closed"></i> Logout</button>
                     </li>
                   </ul>
                 </div>

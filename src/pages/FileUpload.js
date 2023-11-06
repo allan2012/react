@@ -19,7 +19,7 @@ const FileUpload = () => {
   }
   const handleSubmit = event => {
     event.preventDefault()
-    const URL = `http://127.0.0.1:8000/api/pictures`
+    const URL = `/api/images`
     const formData = new FormData()
     formData.append('file', file)
 
@@ -31,21 +31,23 @@ const FileUpload = () => {
 
     client.post(URL, formData, config).then((response) => {
       console.log(response.data)
-      let data = response.data
       setFile("")
       toast.success(`Picture uploaded successfully!`)
+    }).catch(error => {
+      toast.error('Oops! error uploading image')
+      console.log(error)
     })
   }
 
   const handleDelete = (id) => {
-    client.delete(`http://127.0.0.1:8000/api/pictures/${id}`).then(response => {
+    client.delete(`/api/images/${id}`).then(response => {
       setDeletedPicture(id)
       toast.success("Picture has been deleted successfully")
     }).catch(error => { console.log(error)})
   }
 
   useEffect(() => {
-    client.get('http://127.0.0.1:8000/api/pictures').then(response => {
+    client.get('/api/images').then(response => {
       setPictures(response.data)
     }).catch(error => { console.log(error)})
   }, [file, deletedPicture])

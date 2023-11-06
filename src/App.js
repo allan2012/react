@@ -12,13 +12,13 @@ import {isAuthenticated} from "./api/Auth"
 import PageNotFound from "./pages/PageNotFound";
 import Modals from "./pages/Modals";
 import Options from "./pages/Options";
+import MemberForm from "./pages/MemberForm";
 
 function App() {
 
     if (isAuthenticated === false) {
       return <Login />
     }
-
 
   return (
     <Routes>
@@ -30,6 +30,7 @@ function App() {
       <Route path="/alerts" element={<Alerts />}  />
       <Route path="/modals" element={<Modals />}  />
       <Route path="/search" element={<Search />}  />
+      <Route path="/member/:id" element={<MemberForm />}  />
       <Route path="/options" element={<Options />}  />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
